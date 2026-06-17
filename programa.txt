@@ -1,0 +1,5 @@
+/* Comentario de prueba */
+entier x = 10;
+si (x == 10) {
+    afficher << x;
+}

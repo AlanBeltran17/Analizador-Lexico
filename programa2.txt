@@ -1,0 +1,17 @@
+/* Programa de prueba para CodeBleu */
+entier limite = 100;
+entier contador = 0;
+reel tasa = 0.5;
+
+// Bucle para iterar
+tantque (contador < limite) {
+    si (contador == 50) {
+        afficher << contador;
+    }
+    
+    contador = contador + 1;
+}
+
+// Prueba de cadenas y entrada
+chaine mensaje = "Inicio";
+lire << mensaje;
