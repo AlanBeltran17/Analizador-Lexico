@@ -1,5 +1,4 @@
 #include "AnalizadorLexico.h"
-
 #include <string.h>
 
 int esEsp(char c) { return (c==' ' || c=='\t' || c=='\r' || c=='\n'); }
@@ -50,7 +49,9 @@ Token ObtTok(AnaliLexi *lex) {
                 int ch = getc(lex->archivo);
                 if (ch == '\n') lex->linea++;
                 if (ch == EOF) { t.clase = 0; strcpy(t.lexema, "Error: Comentario no cerrado"); return t; }
-                if (previo == '*' && ch == '/') { strcpy(t.lexema, "comentario"); t.clase=30; return t; }
+                if (previo == '*' && ch == '/') {
+                    return ObtTok(lex);
+                }
                 previo = ch;
             }
         }
@@ -124,7 +125,7 @@ Token ObtTok(AnaliLexi *lex) {
             int x = getc(lex->archivo);
             if (esDigito(x)) {
                 t.lexema[i++] = x;
-            } else if (x == '.') { // Si encontramos un punto, es un número real
+            } else if (x == '.') { // Si encontramos un punto, es un numero real
                 t.lexema[i++] = x;
                 // Ahora leemos los decimales
                 while (1) {

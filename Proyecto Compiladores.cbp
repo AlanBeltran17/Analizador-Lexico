@@ -35,8 +35,10 @@
 			<Add option="-fexceptions" />
 		</Compiler>
 		<Unit filename="include/AnalizadorLexico.h" />
+		<Unit filename="include/AnalizadorSintactico.h" />
 		<Unit filename="main.cpp" />
 		<Unit filename="src/AnalizadorLexico.cpp" />
+		<Unit filename="src/AnalizadorSintactico.cpp" />
 		<Extensions>
 			<lib_finder disable_auto="1" />
 		</Extensions>

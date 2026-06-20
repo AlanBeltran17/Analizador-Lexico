@@ -1,0 +1,22 @@
+// Programa de prueba para el analizador sintactico
+entier x = 10;
+entier y = 0;
+reel promedio = 5.5;
+
+si (x > 5) {
+    afficher << "El valor de x es mayor a 5";
+    y = 1;
+} sinon {
+    y = 0;
+}
+
+tantque (y < 10) {
+    y = y + 1;
+    afficher << y;
+}
+
+pour (entier i = 0 ; i < 5 ; i = i + 1) {
+    afficher << i;
+}
+
+lire >> x;

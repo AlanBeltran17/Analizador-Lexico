@@ -1,13 +1,22 @@
 # depslib dependency file v1.0
-1781656679 source:d:\facultad\proyectos\proyecto compiladores\main.cpp
+1781916791 source:d:\facultad\proyectos\proyecto compiladores\main.cpp
 	<iostream>
 	<stdio.h>
 	"AnalizadorLexico.h"
+	"AnalizadorSintactico.h"
 
 1781656459 d:\facultad\proyectos\proyecto compiladores\include\analizadorlexico.h
 	<stdio.h>
 
-1781660506 source:d:\facultad\proyectos\proyecto compiladores\src\analizadorlexico.cpp
+1781904863 source:d:\facultad\proyectos\proyecto compiladores\src\analizadorlexico.cpp
 	"AnalizadorLexico.h"
 	<string.h>
+
+1781917025 source:d:\facultad\proyectos\proyecto compiladores\src\analizadorsintactico.cpp
+	"AnalizadorSintactico.h"
+	<bits/stdc++.h>
+
+1781917025 d:\facultad\proyectos\proyecto compiladores\include\analizadorsintactico.h
+	"AnalizadorLexico.h"
+	<bits/stdc++.h>
 
