@@ -117,8 +117,8 @@ NodoS* ArbSintactico::prinimp() {
 }
 
 NodoS* ArbSintactico::sentencia() {
-    // Manejo seguro
     if(token.clase == 13) { sigTok(); return nullptr; } // Si encontramos un ; extra, lo ignoramos
+
 
     if(token.clase >= 24 && token.clase <= 26) return declaracion();
     if(token.clase == 1) return asignacion();
@@ -237,7 +237,7 @@ NodoS* ArbSintactico::incremento() {
     if(token.clase == 1) {
         addHijo(inc, nueNodoId("id", 1, token.lexema));
         sigTok();
-        if(token.lexema == "++") { // 28 es sinon, verifica lexema o añade token
+        if(token.lexema == "++") {
              sigTok();
         } else if(token.clase == 18) { // '='
             sigTok();

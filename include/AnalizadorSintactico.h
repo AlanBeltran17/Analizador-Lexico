@@ -20,7 +20,6 @@ struct NodoS
     }
 };
 
-// Constantes para identificar Nodos del AST en CodeBleu
 #define DECLARACION  31
 #define ASIGNACION   32
 #define ENTRADA      33
