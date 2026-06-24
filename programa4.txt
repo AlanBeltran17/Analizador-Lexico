@@ -1,0 +1,7 @@
+entier a;
+entier b;
+a = 2;
+b = 4;
+si (a < b) {
+    b = b + (a / 4);
+}

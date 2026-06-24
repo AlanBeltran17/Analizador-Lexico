@@ -2,19 +2,34 @@
 <CodeBlocks_layout_file>
 	<FileVersion major="1" minor="0" />
 	<ActiveTarget name="Debug" />
-	<File name="src\AnalizadorSintactico.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="16" zoom_2="0">
+	<File name="src\AnalizadorSintactico.cpp" open="1" top="0" tabpos="5" split="0" active="1" splitpos="0" zoom_1="7" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="10693" topLine="323" />
+			<Cursor1 position="9965" topLine="46" />
 		</Cursor>
 	</File>
-	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
+	<File name="src\AnalizadorSemantico.cpp" open="1" top="0" tabpos="7" split="0" active="1" splitpos="0" zoom_1="16" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="2541" topLine="72" />
+			<Cursor1 position="6866" topLine="176" />
 		</Cursor>
 	</File>
-	<File name="src\AnalizadorLexico.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
+	<File name="include\AnalizadorSintactico.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="76" topLine="3" />
+			<Cursor1 position="621" topLine="11" />
+		</Cursor>
+	</File>
+	<File name="src\AnalizadorLexico.cpp" open="1" top="0" tabpos="3" split="0" active="1" splitpos="0" zoom_1="6" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="1144" topLine="3" />
+		</Cursor>
+	</File>
+	<File name="include\AnalizadorSemantico.h" open="1" top="0" tabpos="6" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="670" topLine="13" />
+		</Cursor>
+	</File>
+	<File name="include\GeneradorCuartetos.h" open="1" top="0" tabpos="8" split="0" active="1" splitpos="0" zoom_1="19" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="631" topLine="13" />
 		</Cursor>
 	</File>
 	<File name="include\AnalizadorLexico.h" open="1" top="0" tabpos="2" split="0" active="1" splitpos="0" zoom_1="10" zoom_2="0">
@@ -22,9 +37,14 @@
 			<Cursor1 position="360" topLine="0" />
 		</Cursor>
 	</File>
-	<File name="include\AnalizadorSintactico.h" open="1" top="0" tabpos="4" split="0" active="1" splitpos="0" zoom_1="12" zoom_2="0">
+	<File name="main.cpp" open="1" top="1" tabpos="1" split="0" active="1" splitpos="0" zoom_1="5" zoom_2="0">
 		<Cursor>
-			<Cursor1 position="421" topLine="11" />
+			<Cursor1 position="4619" topLine="135" />
+		</Cursor>
+	</File>
+	<File name="src\GeneradorCuartetos.cpp" open="1" top="0" tabpos="9" split="0" active="1" splitpos="0" zoom_1="17" zoom_2="0">
+		<Cursor>
+			<Cursor1 position="4128" topLine="129" />
 		</Cursor>
 	</File>
 </CodeBlocks_layout_file>

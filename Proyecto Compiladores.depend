@@ -1,9 +1,11 @@
 # depslib dependency file v1.0
-1781916791 source:d:\facultad\proyectos\proyecto compiladores\main.cpp
+1782260703 source:d:\facultad\proyectos\proyecto compiladores\main.cpp
 	<iostream>
 	<stdio.h>
 	"AnalizadorLexico.h"
 	"AnalizadorSintactico.h"
+	"AnalizadorSemantico.h"
+	"GeneradorCuartetos.h"
 
 1781656459 d:\facultad\proyectos\proyecto compiladores\include\analizadorlexico.h
 	<stdio.h>
@@ -19,4 +21,22 @@
 1782166614 d:\facultad\proyectos\proyecto compiladores\include\analizadorsintactico.h
 	"AnalizadorLexico.h"
 	<bits/stdc++.h>
+
+1782266044 source:d:\facultad\proyectos\proyecto compiladores\src\analizadorsemantico.cpp
+	"AnalizadorSemantico.h"
+
+1782265642 d:\facultad\proyectos\proyecto compiladores\include\analizadorsemantico.h
+	<vector>
+	<string>
+	<iostream>
+	"AnalizadorSintactico.h"
+
+1782263628 source:d:\facultad\proyectos\proyecto compiladores\src\generadorcuartetos.cpp
+	"GeneradorCuartetos.h"
+
+1782266995 d:\facultad\proyectos\proyecto compiladores\include\generadorcuartetos.h
+	<vector>
+	<string>
+	<iostream>
+	"AnalizadorSintactico.h"
 
