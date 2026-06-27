@@ -1,12 +1,12 @@
 // Programa de prueba para el analizador sintactico
 entier x = 10;
 entier y = 0;
-reel promedio = 5.5;
+reel promedio = 5.5
 
 si (x > 5) {
     afficher << "El valor de x es mayor a 5";
-    y = 1;
-} sinon {
+    y = 10;
+} sinon 
     y = 0;
 }
 
