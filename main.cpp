@@ -71,20 +71,16 @@ void ejecutarSemantico(char* nomarch) {
     printf("===========================================\n");
 
     ArbSintactico Sintactico(false);
-    // Primero necesitamos construir el árbol sintáctico
     NodoS* raiz = Sintactico.obtRaiz(nomarch);
 
-    // Si el archivo tiene errores sintácticos críticos, los mostramos y frenamos
     Sintactico.impErrores();
 
     if (raiz) {
         AnalizadorSemantico Semantico;
 
-        // Ejecutamos la validación de ámbitos y tipos
         Semantico.analizar(raiz);
         Semantico.imprimirErrores();
 
-        // Liberamos el árbol de la memoria ram al terminar
         ArbSintactico::libArb(raiz);
     } else {
         printf("No se pudo realizar el analisis semantico debido a errores sintacticos previos.\n");
@@ -100,14 +96,12 @@ void ejecutarCuartetos(char* nomarch) {
     NodoS* raiz = Sintactico.obtRaiz(nomarch);
 
     if (raiz) {
-        // 1. Verificación Semántica previa
         AnalizadorSemantico Semantico;
         Semantico.analizar(raiz);
 
         if (Semantico.obtErrores().empty()) {
             printf("Analisis semantico correcto. Generando cuartetos...\n");
 
-            // 2. Generación
             GeneradorCuartetos Gen;
             Gen.generar(raiz);
             Gen.imprimir();
